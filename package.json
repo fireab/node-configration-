@@ -1,0 +1,24 @@
+{
+  "name": "nodeconfigration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+"scripts": {
+  "dev": "NODE_ENV=development node index.js",
+  "start": "NODE_ENV=production node index.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.12",
+    "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
