@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    image: my-node-app-production
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    # env_file:
+    #   - .env.production
+    ports:
+      - 9000:9000
+    environment:
+      - NODE_ENV=production
+      - KEY=${KEY}
+    volumes:
+      - .:/app
+    

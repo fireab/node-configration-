@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    image: my-node-app-development
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    ports:
+      - 7545:7545
+    environment:
+      - NODE_ENV=development
+      - KEY=${KEY}
+    volumes:
+      - .:/app
+    
